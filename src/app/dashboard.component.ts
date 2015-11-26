@@ -1,7 +1,6 @@
 import {Component, CORE_DIRECTIVES} from 'angular2/angular2';
 import {Hero} from './hero.model';
 import {HeroService} from './hero.service';
-import {Routes} from './route.config';
 import {StatusComponent, StatusChangeEvent} from "./status.component";
 
 @Component({
