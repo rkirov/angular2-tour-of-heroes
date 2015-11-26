@@ -2,7 +2,6 @@ import {Component, CORE_DIRECTIVES} from 'angular2/angular2';
 import {Router, ROUTER_DIRECTIVES} from 'angular2/router';
 import {HeroService} from './hero.service';
 import {Hero} from './hero.model';
-import {Routes} from './route.config';
 
 @Component({
   selector: 'my-heroes',
@@ -19,7 +18,7 @@ export class HeroesComponent {
   }
 
   gotoDetail() {
-    this._router.navigate(['/' + Routes.detail.as, {id: this.selectedHero.id}]);
+    this._router.navigate(['/Detail', {id: this.selectedHero.id}]);
   }
 
   onSelect(hero: Hero) { this.selectedHero = hero; }

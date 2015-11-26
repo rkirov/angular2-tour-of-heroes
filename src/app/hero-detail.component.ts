@@ -2,7 +2,6 @@ import {Component, FORM_DIRECTIVES} from 'angular2/angular2';
 import {RouteParams, ROUTER_DIRECTIVES} from 'angular2/router';
 import {Hero} from './hero.model';
 import {HeroService} from './hero.service';
-import {Routes} from './route.config';
 
 @Component({
   selector: 'my-hero-detail',
@@ -12,7 +11,6 @@ import {Routes} from './route.config';
 })
 export class HeroDetailComponent {
   hero: Hero;
-  routes = Routes;
 
   constructor(private _heroService: HeroService,
               private _routeParams: RouteParams) {
